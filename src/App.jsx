@@ -21,7 +21,7 @@ function App({ postService }) {
       history("/");
     }
   };
-  console.log("user.userid:", user.userid);
+
   return (
     <div className="app">
       <Header
