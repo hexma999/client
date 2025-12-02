@@ -1,6 +1,7 @@
 import React, { memo } from "react";
 
 const Header = memo(({ userid, onLogout, onMyPosts, onAllPosts }) => {
+  console.log("userid:", userid);
   return (
     <header className="header">
       <div className="logo">
