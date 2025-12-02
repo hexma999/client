@@ -14,9 +14,11 @@ const Posts = memo(({ postService, userid, addable }) => {
   useEffect(() => {
     postService
       .getPosts(userid)
-      .then((posts) => setPosts([...posts]))
+      .then((posts) => {
+        setPosts([...posts]);
+      })
       .catch(onError);
-  });
+  }, []);
 
   const onCreated = (post) => {
     setPosts((posts) => [post, ...posts]);
