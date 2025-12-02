@@ -4,7 +4,7 @@ import Posts from "../components/Posts";
 
 const MyPosts = ({ postService }) => {
   const { userid } = useParams();
-  return <posts postService={postService} userid={userid} addable={false} />;
+  return <Posts postService={postService} userid={userid} addable={false} />;
 };
 
 export default MyPosts;

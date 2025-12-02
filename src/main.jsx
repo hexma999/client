@@ -2,7 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";
-// npm i react-router-dom
+
 import { BrowserRouter } from "react-router-dom";
 import TokenStorage from "./db/token.js";
 import AuthService from "./service/auth.js";

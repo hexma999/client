@@ -29,7 +29,9 @@ export default class AuthService {
     const token = this.tokenStorage.getToken();
     return this.http.fetch("/auth/me", {
       method: "POST",
-      headers: { Authorization: `Bearer ${token}` },
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
     });
   }
   async logout() {
