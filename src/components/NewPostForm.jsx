@@ -27,7 +27,7 @@ const NewPostForm = ({ postService, onError }) => {
         autoFocus
         onChange={onChange}
         className="form-input post-input"
-      />{" "}
+      />
       <button type="submit" className="form-btn">
         포스트
       </button>

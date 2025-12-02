@@ -13,7 +13,7 @@ export default class PostService {
   }
 
   async createPost(text) {
-    return this.http.fetch("/post", {
+    return this.http.fetch(`/post`, {
       method: "POST",
       headers: this.getHeaders(),
       body: JSON.stringify({ text }),
