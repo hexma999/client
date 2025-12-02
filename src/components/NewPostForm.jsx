@@ -2,14 +2,15 @@ import React, { useState } from "react";
 
 const NewPostForm = ({ postService, onError }) => {
   const [post, setPost] = useState("");
+
   const onSubmit = async (event) => {
     event.preventDefault();
-    // postService
-    //   .createPost(post)
-    //   .then((created) => {
-    //     setPost("");
-    //   })
-    //   .catch(onError);
+    postService
+      .createPost(post)
+      .then((created) => {
+        setPost("");
+      })
+      .catch(onError);
   };
 
   const onChange = (event) => {
